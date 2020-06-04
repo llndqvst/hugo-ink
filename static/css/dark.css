@@ -66,6 +66,10 @@ html.dark .footer {
   border-color: #333;
 }
 
-html.dark .highlight {
-  background-color: #333;
+html.dark pre {
+    background-color: #1d1d1d;
 }
+
+/* html.dark .highlight { */
+/*   background-color: #333; */
+/* } */
