@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: serif, "Inter", sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.6;
@@ -123,8 +123,9 @@ blockquote em {
 
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
     color: #333;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 1.3em;
     margin: 30px 0 20px 0;
 }
@@ -203,7 +204,7 @@ ul {
 pre {
     border-radius: 5px;
     font-size: 0.9em;
-    padding: 5px;
+    padding: .2rem;
     background-color: #f2f2f2;
 }
 
@@ -211,7 +212,7 @@ pre {
     font-family: monospace;
     margin-bottom: 0;
     margin-top: 0;
-    padding: 5px;
+    padding: .2rem;
     background-color: transparent !important;
 }
 
@@ -219,9 +220,16 @@ pre {
     border-radius: 5px;
 }
 
-.highlight table tbody tr td:first-child code {
-    font-size: 0.9em;
-}
+/* .highlight table tbody tr td:first-child pre { */
+/*     border-radius: 5px 0 0 5px; */
+/*     background-color: #7f7f7f !important; */
+/*     color: #282a36 !important; */
+/*     /\* font-size: 0.9rem; *\/ */
+/* } */
+
+/* .highlight table tbody tr td:first-child pre code span { */
+/*     color: #282a36 !important; */
+/* } */
 /* .highlight { */
 /*     background: 0 0; */
 /*     background-color: #FAFAFA; */
@@ -344,7 +352,7 @@ pre {
     text-align: center;
 }
 .post-header .meta .date .day {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", serif;
     font-weight: 700;
     line-height: 0.45em;
     font-size: 3em;
@@ -373,6 +381,11 @@ pre {
     border-radius: 4px;
     margin-left: 6px;
     background-color: #f9f2f4;
+}
+
+.post .tags ul {
+    display: flex;
+    list-style: none;
 }
 
 .post .tags a {
