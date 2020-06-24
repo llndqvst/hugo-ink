@@ -51,7 +51,7 @@ html.dark a:hover {
   opacity: 0.8;
 }
 
-html.dark .post-tags .tags a {
+html.dark .post .tags a {
   border: 1px solid #ddd;
   color: #ddd;
 }
