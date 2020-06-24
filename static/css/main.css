@@ -21,18 +21,6 @@ html,button,input,select,textarea {
     color: #333;
 }
 
-::-moz-selection {
-    background: #3700ff;
-    text-shadow: none;
-    color: #fff;
-}
-
-::selection {
-    background: #3700ff;
-    text-shadow: none;
-    color: #fff;
-}
-
 hr {
     display: block;
     height: 1px;
@@ -123,10 +111,9 @@ blockquote em {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     color: #333;
     font-weight: 550;
-    line-height: 1.3em;
     margin: 30px 0 20px 0;
 }
 
@@ -219,21 +206,6 @@ pre {
 .highlight div {
     border-radius: 5px;
 }
-
-/* .highlight table tbody tr td:first-child pre { */
-/*     border-radius: 5px 0 0 5px; */
-/*     background-color: #7f7f7f !important; */
-/*     color: #282a36 !important; */
-/*     /\* font-size: 0.9rem; *\/ */
-/* } */
-
-/* .highlight table tbody tr td:first-child pre code span { */
-/*     color: #282a36 !important; */
-/* } */
-/* .highlight { */
-/*     background: 0 0; */
-/*     background-color: #FAFAFA; */
-/* } */
 
 .wrapper {
     max-width: 760px;
@@ -354,10 +326,8 @@ pre {
 .post-header .meta .date .day {
     font-family: "Inter", serif;
     font-weight: 700;
-    line-height: 0.45em;
-    font-size: 3em;
+    font-size: 2em;
     display: block;
-    margin-bottom: 20px;
 }
 .post-header .meta .date .rest {
     display: block;
