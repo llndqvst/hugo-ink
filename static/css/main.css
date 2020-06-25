@@ -86,7 +86,7 @@ body {
     font-family: 'Merriweather', sans-serif;
     font-weight: 400;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
     font-size: 1.1rem;
 }
 
@@ -516,6 +516,7 @@ pre {
 @media (max-width: 900px) {
     body {
         padding: 20px;
+        font-size: 1rem;
     }
 
     h1 {
@@ -552,5 +553,9 @@ pre {
       display: block;
       overflow-x: auto;
       width: 100%;
+    }
+
+    blockquote {
+        font-size: 1rem;
     }
 }
