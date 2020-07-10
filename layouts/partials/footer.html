@@ -4,7 +4,12 @@
 	</nav>
 </div>
 
-{{ template "_internal/google_analytics_async.html" . }}
+{{- with .Site.Params.plausible -}}
+    {{- if not .Site.IsServer -}}
+        <script async defer data-domain=".domain"
+          src=".url"></script>
+    {{- end -}}
+{{- end -}}
 {{- with .Site.Params.Social -}}
-<script>feather.replace()</script>
+    <script>feather.replace()</script>
 {{- end -}}
