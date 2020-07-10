@@ -4,8 +4,8 @@
 	</nav>
 </div>
 
-{{- with .Site.Params.plausible -}}
-    {{- if not .Site.IsServer -}}
+{{- if not .Site.IsServer -}}
+    {{- with .Site.Params.plausible -}}
         <script async defer data-domain=".domain"
           src=".url"></script>
     {{- end -}}
