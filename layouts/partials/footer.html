@@ -4,12 +4,12 @@
 	</nav>
 </div>
 
-{{- if not .Site.IsServer -}}
-    {{- with .Site.Params.plausible -}}
-        <script async defer data-domain="{{ .domain }}"
-          src="{{ .url }}"></script>
-    {{- end -}}
-{{- end -}}
+{{ if not .Site.IsServer }}
+    {{ if and .Site.Params.PlausibleUrl .Site.Params.PlausibleDomain }}
+        <script async defer data-domain="{{ .Site.Params.PlausibleDomain }}"
+          src="{{ .Site.Params.PlausibleUrl }}"></script>
+    {{ end }}
+{{ end }}
 {{- with .Site.Params.Social -}}
     <script>feather.replace()</script>
 {{- end -}}
