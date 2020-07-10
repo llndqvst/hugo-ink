@@ -6,8 +6,8 @@
 
 {{- if not .Site.IsServer -}}
     {{- with .Site.Params.plausible -}}
-        <script async defer data-domain=".domain"
-          src=".url"></script>
+        <script async defer data-domain="{{ .domain }}"
+          src="{{ .url }}"></script>
     {{- end -}}
 {{- end -}}
 {{- with .Site.Params.Social -}}
