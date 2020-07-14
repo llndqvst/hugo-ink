@@ -196,8 +196,13 @@ blockquote em {
 
 h1, h2, h3, h4, h5, h6 {
     color: #333;
-    font-weight: 900;
+    font-family: system-ui;
+    /* font-weight: 900; */
     margin: 30px 0 20px 0;
+}
+
+.matter h1.title {
+    font-family: "Merriweather", serif;
 }
 
 h1 {
@@ -222,6 +227,17 @@ h5 {
 
 h6 {
     font-size: .9rem;
+}
+
+h3.title.small a {
+    color: inherit;
+    border-bottom: none;
+    margin-bottom: 0 !important;
+    padding: .1em;
+}
+
+h3.title.small a:hover {
+    background-color: grey;
 }
 
 .align-center {
@@ -274,7 +290,7 @@ ul {
 pre {
     border-radius: 5px;
     font-size: 0.9em;
-    padding: .2rem;
+    padding: .2em;
     background-color: #f2f2f2;
 }
 
@@ -323,9 +339,12 @@ pre {
     .site-title a {
         color: #333;
         text-decoration: none !important;
+        padding: .2rem;
     }
     .site-title a:hover {
-        border-bottom-width: 3px;
+        color: inherit;
+        background-color: grey;
+        border-bottom: inherit;
     }
 
 .header .site-description {
@@ -399,26 +418,6 @@ pre {
     margin-bottom: 45px;
 }
 
-.post-header {
-    display: flex;
-}
-.post-header .meta .date {
-    font-family: system-ui;
-    margin-right: 30px;
-    width: 64px;
-    text-align: center;
-}
-.post-header .meta .date .day {
-    /* font-family: "Inter", sans-serif; */
-    font-weight: 700;
-    font-size: 2em;
-    display: block;
-}
-.post-header .meta .date .rest {
-    display: block;
-    font-size: 0.75em;
-    /* font-family: "Inter", serif; */
-}
 .post-header h1.title {
     margin: -10px 0 0 0;
 }
@@ -458,6 +457,11 @@ pre {
     font-size: 0.85em;
     text-decoration: none;
     margin: 0 10px 0 0;
+}
+
+.matter h5.date {
+    margin-top: -.4em;
+    font-weight: 500;
 }
 
 .list .posts .post-header .meta {
