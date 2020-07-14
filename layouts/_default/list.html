@@ -23,7 +23,18 @@
 							<a href="{{ .RelPermalink }}">{{.Title}}{{ if .Draft }}<sup class="draft-label">DRAFT</sup>{{ end }}</a>
 						</h3>
                         {{ if ne .Date.Year 1 }}
+                        <div class="date-info">
                             <h5 class="date">{{ .PublishDate.Format "Monday, 2 January 2006" }}</h5>
+                            {{ if not (eq .PublishDate.YearDay .Lastmod.YearDay) }}
+                            <h5 class="date edit">
+                              <svg class="feather">
+                                <title>Last edited</title>
+                                <desc>Icon depciting pen for last edited post</desc>
+                                <use xlink:href="/icons/feather-sprite.svg#edit-2"/>
+                              </svg>
+                              {{ .Lastmod.Format "2 January 2006" }}</h5>
+                            {{ end }}
+                        </div>
                         {{ end }}
 					</div>
 				</div>

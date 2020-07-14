@@ -14,7 +14,11 @@
 		<nav class="nav social">
 			<ul class="flat">
 				{{- range $index, $key := .Site.Params.Social -}}
-					<li><a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a></li>
+				<li><a href="{{ $key.url }}" title="{{ $key.name }}">
+                    <svg class="feather">
+                      <use xlink:href="/icons/feather-sprite.svg#{{ $key.icon }}"/>
+                    </svg>
+                </a></li>
 				{{- end -}}
 			</ul>
 		</nav>
