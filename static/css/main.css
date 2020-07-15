@@ -92,7 +92,6 @@ body {
     font-family: system-ui;
     font-weight: 400;
     color: var(--main-color);
-    line-height: 1.7;
     font-size: 1.1rem;
 }
 
@@ -400,7 +399,8 @@ pre {
 }
 
 .date-info {
-    line-height: 1rem;
+    /* line-height: 1rem; */
+    margin-left: .2em;
     display: flex;
 }
     .date-info h5 {
@@ -459,6 +459,7 @@ pre {
 
 .post .markdown {
     font-family: "Merriweather";
+    line-height: 1.6em;
 }
 
 .post .title.small {
