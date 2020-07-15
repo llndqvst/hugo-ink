@@ -248,6 +248,7 @@ h3.title.small a {
     border-bottom: none;
     margin-bottom: 0 !important;
     padding: .1em;
+    margin-left: -.1em;
 }
 
 h3.title.small a:hover {
@@ -399,8 +400,6 @@ pre {
 }
 
 .date-info {
-    /* line-height: 1rem; */
-    margin-left: .2em;
     display: flex;
 }
     .date-info h5 {
