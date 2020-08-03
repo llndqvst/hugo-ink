@@ -504,6 +504,14 @@ pre {
     margin-left: 5px;
 }
 
+.post .markdown p code {
+    background-color: #B6DAC7;
+    padding: .15em;
+    font-size: .9em;
+    border-radius: .2em;
+}
+
+
 .footer {
     /* font-family: "Inter"; */
     text-align: right;

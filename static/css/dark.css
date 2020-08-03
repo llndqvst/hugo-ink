@@ -85,6 +85,9 @@ html.dark pre {
     background-color: #1d1d1d;
 }
 
+html.dark .post .markdown p code {
+    background-color: #2B553E;
+}
 /* html.dark .highlight { */
 /*   background-color: #333; */
 /* } */
